@@ -27,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The AnyData modules provide simple and uniform access to data from
 many sources - perl arrays, local files, remote files retrievable via
-http or ftp - and in many formats including flat files (CSV, Fixed
+http or FTP - and in many formats including flat files (CSV, Fixed
 Length, Tab Delimited, etc), standard format files (Web Logs, Passwd
 files, etc.),  structured files (XML, HTML Tables) and binary files
 with parseable headers (mp3s, jpgs, pngs, etc).
@@ -35,7 +35,7 @@ with parseable headers (mp3s, jpgs, pngs, etc).
 %description -l pl
 Modu³y AnyData daj± prosty i ujednolicony dostêp do danych z wielu
 ¼róde³ - tablic perlowych, plików lokalnych, plików zdalnych
-dostêpnych po http lub ftp - oraz w wielu formatach, w tym p³askich
+dostêpnych po http lub FTP - oraz w wielu formatach, w tym p³askich
 plikach (CSV, z polami o sta³ej d³ugo¶ci, ograniczonych tabami itp.),
 plikach o standardowych formatach (logi WWW, pliki passwd), plikach
 strukturalnych (tabele XML, HTML) oraz plikach binarnych z
