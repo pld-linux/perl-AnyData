@@ -10,7 +10,7 @@ Version:	0.05
 Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/authors/id/J/JZ/JZUCKER/AnyData-%{version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/J/JZ/JZUCKER/AnyData-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-26
 %if %{?_with_test:1}%{!?_with_test:0}
