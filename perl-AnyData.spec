@@ -10,7 +10,7 @@ Name:		perl-%{pdir}
 Version:	0.08
 Release:	1
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/J/JZ/JZUCKER/AnyData-%{version}.tar.gz
 # Source0-md5:	79686834bf70e3201c99e8ba965b883f
