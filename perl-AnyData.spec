@@ -1,23 +1,25 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+# _with_tests - perform "make test" (hangs with XML::Twig or HTML::TableExtract installed)
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	AnyData
 Summary:	AnyData -- easy access to data in many formats
 Summary(pl):	AnyData -- ³atwy dostêp do danych w ró¿nych formatach
 Name:		perl-%{pdir}
 Version:	0.05
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/authors/id/J/JZ/JZUCKER/AnyData-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-26
-%if %{?_without_test:0}%{!?_without_test:1}
+%if %{?_with_test:1}%{!?_with_test:0}
 BuildRequires:	perl(Data::Dumper)
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreq	'perl(XML::Twig)' 'perl(HTML::TableExtract)'
 
 %description
 The AnyData modules provide simple and uniform access to data from
@@ -42,7 +44,7 @@ parsowalnymi nag³ówkami (mp3, jpg, png itp.).
 %build
 perl Makefile.PL
 %{__make}
-%{!?_without_tests:%{__make} test}
+%{?_with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
