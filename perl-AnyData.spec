@@ -8,7 +8,7 @@ Summary:	AnyData - easy access to data in many formats
 Summary(pl):	AnyData - ³atwy dostêp do danych w ró¿nych formatach
 Name:		perl-%{pdir}
 Version:	0.10
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -16,7 +16,6 @@ Source0:	http://www.cpan.org/authors/id/J/JZ/JZUCKER/AnyData-%{version}.tar.gz
 # Source0-md5:	ff9fb4c7d8b99d63a773e66f0ccba788
 %if %{with tests}
 BuildRequires:	perl-CGI
-BuildRequires:	perl(Data::Dumper)
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
