@@ -3,7 +3,7 @@
 %bcond_without	tests	# don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	AnyData
+%define		pdir	AnyData
 Summary:	AnyData - easy access to data in many formats
 Summary(pl):	AnyData - ³atwy dostêp do danych w ró¿nych formatach
 Name:		perl-AnyData
