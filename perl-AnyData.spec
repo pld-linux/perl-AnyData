@@ -11,6 +11,7 @@ Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/J/JZ/JZUCKER/AnyData-%{version}.tar.gz
+# Source0-md5:	e3a70cbbb39bd14e3dd61f894e8850fe
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{?_with_test:1}%{!?_with_test:0}
