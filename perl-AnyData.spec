@@ -6,7 +6,7 @@
 %define	pdir	AnyData
 Summary:	AnyData - easy access to data in many formats
 Summary(pl):	AnyData - ³atwy dostêp do danych w ró¿nych formatach
-Name:		perl-%{pdir}
+Name:		perl-AnyData
 Version:	0.10
 Release:	3
 # same as perl
