@@ -8,7 +8,7 @@ Summary:	AnyData - easy access to data in many formats
 Summary(pl):	AnyData - ³atwy dostêp do danych w ró¿nych formatach
 Name:		perl-%{pdir}
 Version:	0.10
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
