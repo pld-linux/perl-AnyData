@@ -7,12 +7,12 @@ Summary:	AnyData -- easy access to data in many formats
 Summary(pl):	AnyData -- ³atwy dostêp do danych w ró¿nych formatach
 Name:		perl-%{pdir}
 Version:	0.05
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/J/JZ/JZUCKER/AnyData-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{?_with_test:1}%{!?_with_test:0}
 BuildRequires:	perl(Data::Dumper)
 %endif
@@ -42,7 +42,8 @@ parsowalnymi nag³ówkami (mp3, jpg, png itp.).
 %setup -q -n %{pdir}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{?_with_tests:%{__make} test}
 
@@ -56,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/*.pm
-%{perl_sitelib}/%{pdir}
+%{perl_vendorlib}/*.pm
+%{perl_vendorlib}/%{pdir}
 %{_mandir}/man3/*
