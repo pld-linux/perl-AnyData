@@ -44,7 +44,7 @@ parsowalnymi nag³ówkami (mp3, jpg, png itp.).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 %{?_with_tests:%{__make} test}
 
