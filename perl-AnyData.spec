@@ -42,7 +42,7 @@ parsowalnymi nag³ówkami (mp3, jpg, png itp.).
 %setup -q -n %{pdir}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 %{?_with_tests:%{__make} test}
 
