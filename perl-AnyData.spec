@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	AnyData
 Summary:	AnyData - easy access to data in many formats
-Summary(pl):	AnyData - ³atwy dostêp do danych w ró¿nych formatach
+Summary(pl.UTF-8):   AnyData - Å‚atwy dostÄ™p do danych w rÃ³Å¼nych formatach
 Name:		perl-AnyData
 Version:	0.10
 Release:	3
@@ -32,14 +32,14 @@ Length, Tab Delimited, etc), standard format files (Web Logs, Passwd
 files, etc.),  structured files (XML, HTML Tables) and binary files
 with parseable headers (mp3s, jpgs, pngs, etc).
 
-%description -l pl
-Modu³y AnyData daj± prosty i ujednolicony dostêp do danych z wielu
-¼róde³ - tablic perlowych, plików lokalnych, plików zdalnych
-dostêpnych po HTTP lub FTP - oraz w wielu formatach, w tym p³askich
-plikach (CSV, z polami o sta³ej d³ugo¶ci, ograniczonych tabami itp.),
+%description -l pl.UTF-8
+ModuÅ‚y AnyData dajÄ… prosty i ujednolicony dostÄ™p do danych z wielu
+ÅºrÃ³deÅ‚ - tablic perlowych, plikÃ³w lokalnych, plikÃ³w zdalnych
+dostÄ™pnych po HTTP lub FTP - oraz w wielu formatach, w tym pÅ‚askich
+plikach (CSV, z polami o staÅ‚ej dÅ‚ugoÅ›ci, ograniczonych tabami itp.),
 plikach o standardowych formatach (logi WWW, pliki passwd), plikach
 strukturalnych (tabele XML, HTML) oraz plikach binarnych z
-parsowalnymi nag³ówkami (mp3, jpg, png itp.).
+parsowalnymi nagÅ‚Ã³wkami (mp3, jpg, png itp.).
 
 %prep
 %setup -q -n %{pdir}-%{version}
