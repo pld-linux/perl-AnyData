@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	AnyData
 Summary:	AnyData - easy access to data in many formats
-Summary(pl.UTF-8):   AnyData - łatwy dostęp do danych w różnych formatach
+Summary(pl.UTF-8):	AnyData - łatwy dostęp do danych w różnych formatach
 Name:		perl-AnyData
 Version:	0.10
 Release:	3
