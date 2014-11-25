@@ -1,9 +1,9 @@
 #
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	AnyData
+%include	/usr/lib/rpm/macros.perl
 Summary:	AnyData - easy access to data in many formats
 Summary(pl.UTF-8):	AnyData - łatwy dostęp do danych w różnych formatach
 Name:		perl-AnyData
@@ -14,11 +14,12 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/J/JZ/JZUCKER/AnyData-%{version}.tar.gz
 # Source0-md5:	ff9fb4c7d8b99d63a773e66f0ccba788
+URL:		http://search.cpan.org/dist/AnyData/
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-CGI
 %endif
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +30,7 @@ The AnyData modules provide simple and uniform access to data from
 many sources - perl arrays, local files, remote files retrievable via
 HTTP or FTP - and in many formats including flat files (CSV, Fixed
 Length, Tab Delimited, etc), standard format files (Web Logs, Passwd
-files, etc.),  structured files (XML, HTML Tables) and binary files
+files, etc.), structured files (XML, HTML Tables) and binary files
 with parseable headers (mp3s, jpgs, pngs, etc).
 
 %description -l pl.UTF-8
